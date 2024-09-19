@@ -22,7 +22,7 @@ public class Strings_String_Compression {
 
         for(char ch : mp.keySet()){              // keySet(), Not keysSet()
             ans.append(ch);
-            ans.append(mp.get(ch));
+            if(mp.get(ch)>1) ans.append(mp.get(ch));
         }
 
         System.out.println(ans.toString());
